@@ -13,6 +13,7 @@
 		84285E601E61A062009B6469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84285E5F1E61A062009B6469 /* Assets.xcassets */; };
 		84285E631E61A062009B6469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84285E611E61A062009B6469 /* LaunchScreen.storyboard */; };
 		84285E6E1E61A062009B6469 /* PiratTaxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84285E6D1E61A062009B6469 /* PiratTaxiTests.swift */; };
+		846CCB901E62531800B938A8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846CCB8F1E62531800B938A8 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		84285E691E61A062009B6469 /* PiratTaxiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiratTaxiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84285E6D1E61A062009B6469 /* PiratTaxiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiratTaxiTests.swift; sourceTree = "<group>"; };
 		84285E6F1E61A062009B6469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846CCB8F1E62531800B938A8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				84285E581E61A062009B6469 /* AppDelegate.swift */,
 				84285E5A1E61A062009B6469 /* ViewController.swift */,
+				846CCB8F1E62531800B938A8 /* SettingsViewController.swift */,
 				84285E5C1E61A062009B6469 /* Main.storyboard */,
 				84285E5F1E61A062009B6469 /* Assets.xcassets */,
 				84285E611E61A062009B6469 /* LaunchScreen.storyboard */,
@@ -141,16 +144,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Christensen Software";
 				TargetAttributes = {
 					84285E541E61A062009B6469 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = LQXCBD4SNB;
+						LastSwiftMigration = 0820;
 					};
 					84285E681E61A062009B6469 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = LQXCBD4SNB;
+						LastSwiftMigration = 0820;
 						TestTargetID = 84285E541E61A062009B6469;
 					};
 				};
@@ -201,6 +206,7 @@
 			files = (
 				84285E5B1E61A062009B6469 /* ViewController.swift in Sources */,
 				84285E591E61A062009B6469 /* AppDelegate.swift in Sources */,
+				846CCB901E62531800B938A8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +261,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -299,8 +307,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -319,6 +329,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -331,6 +342,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcs.PiratTaxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -342,6 +354,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcs.PiratTaxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -353,6 +366,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcs.PiratTaxiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiratTaxi.app/PiratTaxi";
 			};
 			name = Debug;
@@ -365,6 +379,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcs.PiratTaxiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiratTaxi.app/PiratTaxi";
 			};
 			name = Release;
@@ -388,6 +403,7 @@
 				84285E741E61A062009B6469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84285E751E61A062009B6469 /* Build configuration list for PBXNativeTarget "PiratTaxiTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +412,7 @@
 				84285E771E61A062009B6469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
